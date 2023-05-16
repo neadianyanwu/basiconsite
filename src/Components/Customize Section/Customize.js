@@ -27,55 +27,64 @@ const Customize = () => {
   }, [darkMode]);
 
   return (
-    <div className="customize-container">
-      <div className="customize-content">
-        <h4>Customize</h4>
-        <div className="customize-button-section">
-          <div className="button">
-            <button onClick={handleDarkModeToggle}>
+    <div className="customize small-only mobile-aside">
+      <div className="customize container">
+        <div className="customize top">
+          <span className="span-content">
+            <h4>Customize</h4>
+          </span>
+          <div className="customize-button-section">
+            <div className="button">
+              <button onClick={handleDarkModeToggle}>
                 {darkMode ? <SunDay /> : <MoonNight /> }
-            </button>
+              </button>
 
-            {/* Section: Reset Button */}
-              <button className="reset-button">Reset</button>
+              {/* Section: Reset Button */}
+              <button className="reset-button small secondary">
+                <span className="span-reset">Reset</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="size-container">
-        <nav className="container">
-        <h4 className="size-header">Size</h4>
-        <ul className="label">
-          <li className="active">
-            <a href="#">16</a>
-          </li>
-          <li>
-            <a href="#">24</a>
-          </li>
-          <li>
-            <a href="#">32</a>
-          </li>
-        </ul>
-        </nav>
-        <nav className="container">
-        <h4 className="size-header">Stroke</h4>
-        <ul className="label">
-          <li className="active">
-            <a href="#">1</a>
-          </li>
-          <li>
-            <a href="#">1.5</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-        </ul>
-        </nav>
-    </div>
-    
-    <div className="hr"></div>
-        
-    </div>
+        <div className="metrics body">
+          <div className="metrics-container radio-groups">
+            <div className="metrics-container metrics config">
+              <div className="metrics-content container ">
+                <label className="label">Size</label>
+                  <div className="label body">
+                    <div className="size option">
+                      <div className="size background">16</div>
+                    </div>
+                    <div className="size option active">
+                      <div className="size background">24</div>
+                    </div>
+                    <div className="size option">
+                      <div className="size background">32</div>
+                    </div>
+              </div>
+            </div>
+          </div>
+          <div className="stroke weight config">
+            <div className="metrics-container container">
+              <label className="label">Stroke</label>
+                <label className="label body">
+                  <div className="size option">
+                    <div className="size background">1</div>
+                  </div>
+                  <div className="size option active">
+                    <div className="size background">1.5</div>
+                  </div>
+                  <div className="size option">
+                    <div className="size background">2</div>
+                  </div>
+                </label>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
   )
 }
 

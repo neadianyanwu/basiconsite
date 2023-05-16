@@ -9,7 +9,7 @@ import React from 'react'
 const SideBar = (props) => {
   return (
     <div className="sidebar-container">
-      {props.children}
+      {/* {props.children} */}
 
       <Customize />
       <Collect />

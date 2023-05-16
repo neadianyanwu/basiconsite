@@ -16,7 +16,7 @@ const MainSection = (props) => {
 
   return (
     <div className="main-section-container">
-      {props.children}
+      {/* {props.children} */}
 
       {/* Nav Section: Starts */}
         <Nav />

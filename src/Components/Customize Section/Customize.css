@@ -1,26 +1,49 @@
-.customize-container {
-    position: relative;
+.mobile-aside .customize {
+    border-top: 1px solid #d8d8d8;
+}
+
+.container .customize {
+    /* position: relative;
     padding: 10px;
     padding-bottom: 24px;
     display: flex;
+    flex-direction: column; */
+    padding: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #d8d8d8;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
-h4 {
-    padding: auto;
+.top .customize span .span-content {
+    /* padding: auto;
     margin: 10px;
     display: flex;
     font-size: 18px;
     font-weight: 400;
-    width: 14vw;
+    width: 14vw; */
+    font-size: 16px;
 }
 
-.content-container {
-    display: flex;
+.top .customize {
+    /* display: flex;
     flex-direction: row;
     align-items: flex-start;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 300; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .customize.content h4 {
@@ -29,16 +52,18 @@ h4 {
 
 .customize-button-section {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 50px; */
+    -webkit-box-align: end;
+    align-items: end;
     
 }
 
 /* Section: Customize Buttons */
 .button {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -46,11 +71,26 @@ h4 {
     top: 3px;
     width: 32%;
     right: 11px;
-    gap: 9px;
+    gap: 9px; */
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0.55;
+    transition: stroke 0.1s ease-out;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.reset-button {
-    display: inline-flex;
+/* .button svg * {
+    stroke: #444;
+} */
+
+button .secondary.reset-button {
+    /* display: inline-flex;
     font-size: 16px;
     border: 1px solid #898989;
     color: #333;
@@ -62,21 +102,57 @@ h4 {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
+    justify-content: center; */
+    position: relative;
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: rgba(0,0,0,0.95);
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.small .reset-button {
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    padding: 6px 12px;
+    margin-left: 16px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+button .reset-button {
+    width: auto;
+    -webkit-justify-content: center;
     justify-content: center;
-}
-
-.reset-button:hover {
-    background: #333;
-    color: teal;
-}
-
-.button svg * {
-    stroke: #333;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.95);
+    border: 2px solid rgba(0,0,0,0.95);
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    z-index: 10;
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 /* Size and Stroke CSS Section */
-.size-container {
-    margin: 8px;
+.radio-groups .metrics-container {
+    /* margin: 8px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -84,18 +160,27 @@ h4 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: baseline; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
-.size-header {
-    font-size: 18px;
+.config .metrics-container {
+    /* font-size: 18px;
     font-weight: 400;
     width: 5vw;
-    display: flex;
+    display: flex; */
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
-.size-container .label {
-    padding: 0px;
+label .label {
+    /* padding: 0px;
     margin: 0;
     list-style: none;
     display: flex;
@@ -104,27 +189,87 @@ h4 {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch; */
+        display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
 }
 
-.size-container a {
-    border-left: 1px solid #444;
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
-    border-right: 1px solid #444;
+.body .label {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27px, 1fr));
+}
+
+.option .size {
+    border-left: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
     padding: 8px 16px;
     color: rgba(0,0,0,0.65);
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
+    -webkit-transition: color 0.1s ease-out;
     transition: color 0.1s ease-out;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: center;
     justify-content: center;
-    border-radius: 2px;
 }
 
-ul li.active a {
-    background: #444;
+.option .size .background .size {
+    display: none;
+}
+
+.option .active .size {
+    border-color: rgba(0,0,0,0.95);
+    border-radius: 3px;
     color: #fff;
+    position: relative;
+    font-weight: bold;
+}
+
+.option .size {
+    border-left: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 8px 16px;
+    color: rgba(0,0,0,0.65);
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-transition: color 0.1s ease-out;
+    transition: color 0.1s ease-out;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.config .stroke {
+    flex: 1;
+    -ms-flex: 1;
+}
+
+.option .size:first-of-type {
+    border: 1px solid #d8d8d8;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.option .size:last-of-type {
+    border: 1px solid #d8d8d8;
+    border-radius: 0 3px 3px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -136,6 +281,12 @@ ul li.active a {
         flex-direction: column;
         display: flex;
     }
+}
+
+@media screen and (min-width: 601px) {
+  .small-only .main-section-container {
+    display: none;
+  }
 }
 
 /* @media screen and (max-width: 500px) {

@@ -1,3 +1,10 @@
+.main-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+}
+
 .vertical-line {
     border-left: 1px solid #dcdcdc;
     height: 621vh;
@@ -6,7 +13,7 @@
     top: 0;
 }
 
-.hr {
+/* .hr {
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -15,4 +22,4 @@
     height: 1px;
     bottom: 0;
     background-color: #dcdcdc;
-}
+} */
