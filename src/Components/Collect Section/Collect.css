@@ -1,0 +1,62 @@
+.collect-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.collect-container .collect-header{
+    flex-direction: column;
+    width: 33vw;
+    margin: 4px;
+    padding: 16px;
+    display: flex;
+    margin: 4px;
+    padding: 4px;
+    width: 10vw;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h5 {
+    padding: auto;
+    margin: 10px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    width: 14vw;
+}
+
+.collect-button {
+    display: flex;
+    gap: 16px;
+    margin: 8px;
+    padding: 6px;
+    width: 29vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn1 {
+    padding: 10px 24px;
+    background: #0d0d0d;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+.btn2 {
+    padding: 10px 24px;
+    background: #0d0d0d;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: transparent;
+    color: #444;
+}

@@ -1,0 +1,33 @@
+.main-footer {
+    /* background: #fff; */
+    padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.main-footer-content{
+    display: inline-flex;
+    text-align: center;
+    /* float: right; */
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-footer-content a {
+    display: contents;
+    font-size: 12px;
+    font-weight: 300;
+    flex-direction: row;
+    
+}

@@ -1,0 +1,190 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 40px;
+    width: 100%; 
+}
+
+.hero .hero-content {
+    width: 35vw;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    width: 414px;
+}
+
+.hero .hero-content p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    gap: 24px;
+    text-align: center;
+    align-items: center;
+    list-style-position: inside;
+    color: #716766;
+    list-style: none;
+}
+
+.download-button {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 4px;
+    background-color: #0d0d0d;
+    color: #fdfdfd;
+    width: auto;
+    gap: 0.5rem; */
+
+    width: auto;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; */
+    display: flex;
+    gap: 8px;
+    /* -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center; */
+    align-items: center;
+    background-color: #0d0d0d;
+    border: 2px solid rgba(0,0,0,0.95);
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    /* line-height: 24px; */
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    z-index: 10;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.download-button svg * {
+    stroke: #666;
+}
+
+.doc-button {
+    width: auto;
+    /* display: flex;
+    color: #fefefe;
+    border-radius: 4px; */
+    /* gap: 0.5rem; */
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; 
+    border: 1px solid #d8d8d8;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    z-index: 7; */
+
+    justify-content: center;
+    /* display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox; */
+    display: flex;
+    gap: 0.5rem;
+    /* -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center; */
+    align-items: center;
+    border: 1px solid #d8d8d8;
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    /* line-height: 24px; */
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    z-index: 10;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.doc-button svg * {
+    stroke: #666;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.2px;
+    color: #666;
+}
+
+.button-container {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.hero-content .hero .download-button .doc-button {
+    flex-direction: column;
+    font-size: 4px;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+}
+
+@media screen and (max-width: 660px) {
+    .hero {
+        width: 100%;
+        gap: 20px;   
+    }
+
+    .hero .hero-content h2 {
+        font-size: 24px;
+        width: 276px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button-container .download-button, .button-container .doc-button {
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+    }
+
+    .button-container .download-button {
+        margin-left: 0px;
+    }
+
+    .button-container .doc-button {
+        margin-right: 0px;
+    }
+}
